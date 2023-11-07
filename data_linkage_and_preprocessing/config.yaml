@@ -1,0 +1,9 @@
+scure_drive_data_path: S:\Network Shares\scds\AHSQI001229566\AHSQI001229566_Documents\Analysts\Ken C\pCR\data
+cleaned_data_path: E:/Project/data/aug_23_final_sum_and_ori_cpr.csv
+linked_data: linkedID_cpr_full_data.parquet
+cleaned_data: aug_23_final_sum_and_ori_cpr.csv
+
+pcr_apis:
+  - your_gpt_api
+  - your_gpt_api
+  - your_gpt_api
