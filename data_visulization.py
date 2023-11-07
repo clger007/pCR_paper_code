@@ -280,30 +280,4 @@ def plot_exp3(output_dir):
         plot_training_curve(**plot_args)
 
 
-if __name__ == '__main__':
-    # output_dir = r"E:\Project\pCR_paper_code\results\experiment_3\runs"
-    # plot_exp3(output_dir)
 
-    df = pd.read_csv(r"E:\Project\data\aug_23_final_sum_and_ori_cpr.csv")
-
-
-    def print_helper(text):
-        kw = KeyWord(text, None)
-        result = kw(top_n=40, model_type='tfidf')
-        return ", ".join(list(result.keys())[:10])
-
-    text_pos = df[df['label']=='Yes'].mask_text
-    text_neg = df[df['label']=='No'].mask_text
-    text_all = df.mask_text
-
-    d = {
-        'has pCR' : print_helper(text_pos),
-        'no pCR' : print_helper(text_neg),
-        'entire' : print_helper(text_all),
-        }
-    
-    s = pd.DataFrame([d]).T.to_csv(r'E:\Project\pCR_paper_code\results\text_data\keywords.csv')
-
-
-
-    print(1)
