@@ -1,7 +1,7 @@
 # config.yaml
 
-working-dir:  E:\project\pCR_paper_code
-param-dir: results\intermediate\model_params
-lr-dir: abc\results\intermediate\models
-data-dir: results/intermediate/features.parquet
+working-dir:  dir
+param-dir: your param if you have 
+lr-dir: your model path
+data-dir: your data path
 # Add more arguments as needed
