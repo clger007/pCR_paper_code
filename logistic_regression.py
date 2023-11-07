@@ -287,7 +287,7 @@ def get_datastr():
     return datetime.now().strftime("%m_%d")
 
 if __name__ == '__main__':
-    config = load_config('E:\Project\pCR_paper_code\exp_2_config.yaml')
+    config = load_config('exp_2_config.yaml')
     args = {
         'data_path': config.get("data-dir"),
         "working_dir": config.get('working-dir'),
