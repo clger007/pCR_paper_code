@@ -19,6 +19,8 @@ To assess the capabilities of LLMs, we used several evaluation metrics, includin
 - Precision-Recall AUC (PRAUC)
 
 We employed a bootstrapping resampling method to determine the 95% confidence interval for each of these metrics to enhance the reliability of our results.
+![image](https://github.com/clger007/pCR_paper_code/assets/42550129/03f8f774-ecf0-4bad-870b-8c6e8fa980b4)
+
 
 ### Experiment One: Identifying pCR from De-identified Reports with GPT APIs
 
