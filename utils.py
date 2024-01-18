@@ -176,9 +176,3 @@ def optimize(params, param_names, X, y):
     
     return -1.0*np.mean(f1_scores)
 
-
-if __name__ == '__main__':
-    log_dir1 = r"E:\Project\pCR_paper_code\results\experiment_3\runs\Loss_train_loss.csv"
-    log_dir2 = r"E:\Project\pCR_paper_code\results\experiment_3\runs\Loss_val_loss.csv"
-    ea = get_tensorboard_data(log_dir1, log_dir2)
-    print(1)
