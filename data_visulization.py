@@ -242,8 +242,8 @@ def EMA_smooth(scalars, weight):
         last = smoothed_val
     return smoothed
 
-def plot_exp3(output_dir):
-    p = pathlib.Path(r'E:\Project\pCR_paper_code\results\experiment_3')
+def plot_exp3(result_dir, output_dir):
+    p = pathlib.Path(result_dir)
     metric_mapper = {
         'Recall': 'Sensitivity',
         'Precision': 'PPV',
@@ -253,7 +253,7 @@ def plot_exp3(output_dir):
     metrics = defaultdict(list)
     for file_path in p.glob("*.csv"):
         name = file_path.stem
-        r = re.match(r"^[^_]+", name)
+        r = re.match(r"^[^_]+", name) 
         
         metric_name = r.group(0)
         if metric_name in metric_mapper:
